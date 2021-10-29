@@ -12,7 +12,8 @@ $(document).ready(function () {
   if (window.location.href.indexOf("index") > -1) {
     var posts = [
       {
-        title: "Título 1",
+        title: "Tequisquiapan",
+        subtit: "El destino para olvidarse de la rutina.",
         date:
           "Publicado el día " +
           moment().format("DD") +
@@ -21,10 +22,15 @@ $(document).ready(function () {
           " del " +
           moment().format("YYYY"),
         content:
-          "orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu dapibus nulla. Donec id lorem et nunc luctus elementum. Vivamus porttitor sem eget massa iaculis, sed mattis metus bibendum. Praesent eu ipsum a massa blandit venenatis ut in purus. Sed ut nibh sed massa facilisis mollis tempus sagittis ligula. Maecenas id mollis augue, eu vulputate ligula. Cras felis est, cursus sit amet quam a, consequat ultricies urna. Suspendisse vel vulputate massa, eu condimentum turpis. Curabitur posuere ex eros, nec interdum quam eleifend eu. Morbi ullamcorper sodales ex, a rhoncus justo. Suspendisse tristique justo imperdiet dictum maximus. Vestibulum non feugiat enim. In finibus bibendum velit, a consectetur felis sagittis ullamcorper. Aenean tristique turpis et sem bibendum, suscipit semper turpis consectetur. Donec condimentum euismod libero sit amet scelerisque. Nunc lobortis, nisi vel iaculis malesuada, dolor eros condimentum ipsum, vel placerat lorem tortor sed ipsum.",
+          "El Pueblo Mágico de Tequisquiapan se localiza en el Estado de Querétaro muy cerca de la ciudad de Santiago de Querétaro. Este mágico lugar es muy conocido por ser un poblado pequeño y por encontrarse en una zona de aguas termales. <br><br> Si estás pensando visitar este lugar, te encontrarás con un entorno de completa tranquilidad, ideal para salir de la rutina y respirar el aire puro, así como admirar sus bellos cielos azules y su clima casi perfecto.",
+          img: "img/tequi1.jpg",
+          content2:
+          "Tequis, como es conocido por los lugareños y visitantes, cuenta con un gran corredor de Parques Acuáticos, tiendas de artesanías y vuelos en globo aerostático. Además, Tequisquiapan forma parte de la región del vino en el estado de Querétaro, por lo que aquí también podrás degustar buen vino mexicano gracias a las catas y degustaciones que se realizan en las vinícolas de la zona.",
+          button: "https://www.visitmexico.com/queretaro/tequisquiapan",
       },
       {
-        title: "Título 2",
+        title: "Pueblos Mágicos",
+        subtit: "Descubre México y enamórate de sus Pueblos Mágicos.",
         date:
           "Publicado el día " +
           moment().format("DD") +
@@ -33,20 +39,39 @@ $(document).ready(function () {
           " del " +
           moment().format("YYYY"),
         content:
-          "orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu dapibus nulla. Donec id lorem et nunc luctus elementum. Vivamus porttitor sem eget massa iaculis, sed mattis metus bibendum. Praesent eu ipsum a massa blandit venenatis ut in purus. Sed ut nibh sed massa facilisis mollis tempus sagittis ligula. Maecenas id mollis augue, eu vulputate ligula. Cras felis est, cursus sit amet quam a, consequat ultricies urna. Suspendisse vel vulputate massa, eu condimentum turpis. Curabitur posuere ex eros, nec interdum quam eleifend eu. Morbi ullamcorper sodales ex, a rhoncus justo. Suspendisse tristique justo imperdiet dictum maximus. Vestibulum non feugiat enim. In finibus bibendum velit, a consectetur felis sagittis ullamcorper. Aenean tristique turpis et sem bibendum, suscipit semper turpis consectetur. Donec condimentum euismod libero sit amet scelerisque. Nunc lobortis, nisi vel iaculis malesuada, dolor eros condimentum ipsum, vel placerat lorem tortor sed ipsum.",
+          "El valor cultural, histórico, arquitectónico y gastronómico de los destinos de México es tan grande como su territorio. La designación de Pueblo Mágico se otorga a aquellas comunidades que a través del tiempo han mantenido su arquitectura original, tradiciones, historia y cultura. Y que han sido de gran relevancia para la historia del país.",
+          img: "img/pm1.jpg",
+          content2:
+          "Los Pueblos Mágicos se definen como lugares con grandes simbolismos y leyendas, son poblados cuya importancia histórica ha sido fundamental para el desarrollo de la historia y que enaltecen la identidad nacional en cada uno de sus rincones. Estos lugares tienen una magia especial que conecta al visitante con nuestras raíces y costumbres. De belleza excepcional son destinos que simplemente enamoran. <br><br>Actualmente a lo largo del territorio se encuentran 132 Pueblos Mágicos, cuyos atractivos generan gran admiración entre los turistas, no solo nacionales sino del mundo entero.",
+          button: "https://www.visitmexico.com/tipos-de-turismo/pueblos-magicos",
       },
     ];
     console.log(posts);
 
     // Recorrer el JSON para enviar al index.HTML
     posts.forEach((item) => {
-      var post = `<article class="post">
+      var post = `<br><br><hr><br><br>
+                  <article class="post">
                     <h2>${item.title}</h2>
-                    <span class="date">${item.date}</span>
+                    <h3>${item.subtit}</h3>
+                    <br>
+                    
                     <p>
                         ${item.content}
                     </p>
-                    <a href="#" class="button-more">Artículo completo</a>
+                    <div style="text-align: center;">
+                      <img src=${item.img}  class="rounded" width="800px">
+                      </div>
+                    <p>
+                        ${item.content2}
+                    </p>
+                    <span class="date">${item.date}</span>
+                    <br>
+                    <div style="text-align: center;">
+                      <a href=${item.button}>
+                        <button class="boton_personalizado2">Artículo completo</button>
+                      </a>
+                    </div>
                 </article>`;
       //console.log(post);
       $("#posts").append(post);
@@ -90,6 +115,13 @@ $(document).ready(function () {
     $("#logout").click(function () {
       localStorage.clear();
       location.reload();
+    });
+  }
+
+  //Activar Jquery validator
+  if(window.location.href.indexOf("contacto")>-1){
+    $.validate({
+      lang: "es",
     });
   }
 });

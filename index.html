@@ -7,93 +7,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Estilos-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css2/styles.css"> -->
+    <!-- <link id="theme" rel="stylesheet" type="text/css" href="css2/blue.css"> -->
 
-    <!--Slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- Slider -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     
-    <!--SLider JS Function-->
-    <script type="text/javascript" src="js/main.js"></script>
-    <title>Maquetación</title>
 
+    <!--SLider JS Function-->
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+
+    <title>Rainbow</title>
+
+    <link rel="icon"  type="image/png" href="img/logo.png">
+
+    
     <!--Moment-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="css2/styles.css">
+    
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
-    <!-- <form action="C:\Users\FEDERICO\Documents\Salle\3er Semestre\Desarrollo web\scripts\Maquetación\perfil.html" 
-    onsubmit="return validarForma(this)" 
-    method="POST"> -->
-    <div id="theme-selector">
-        <div id = "to-red"></div>
-        <div id = "to-green"></div>
-        <div id = "to-blue"></div>
-    </div>
+    
     <!--Contenedor Global-->
-    <section id = "global">
+    <!-- <section id = "global"> Ayudaaaaa :( el slider no funcionaaaaa -->
         <!--Contenido-->
         <header>
-            <div id="logo">
-                Alessia Uribe
-            </div>
+            
             <div class="clearfix"></div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="biografia.html">Biografía</a></li>
-                    <li><a href="portafolio.html">Portafolio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="perfil.html">Perfil</a></li>
-                </ul>
-            </nav>
+            <nav style="background-color: #80a1f2;" class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">&nbsp;&nbsp;
+                      <img src="img/logo.png" width="100px">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse-navbar" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="index.html">
+                        <h1 class="navv">Inicio</h1>
+                      </a>
+                      <a class="nav-link" href="cotizacion.html">
+                          <h1 class="navv">Cotización</h1>
+                      </a>
+                      <a class="nav-link" href="contacto.html">
+                        <h1 class="navv">Contacto</h1>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/coffee.jpg" title="Coffee"></div>
-                <div><img src="img/computer.jpg" title="Computer"></div>
-                <div><img src="img/mac.jpg" title="Macbook pro"></div>
-              </div>
+
+
+        <!--Slider bootstrap-->
+        
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Bienvenida3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="tituloCarrusel">Bienvenido</h1>
+                <!-- <p>Tenemos el viaje ideal para ti. Conócenos y no olvides seguirnos en nuestras redes sociales. 
+                    Tu próxima aventura al alcance de tu mano. No te lo puedes perder.
+                </p> -->
+                <a  href="cotizacion.html" > 
+                    <button type="button" class="btn btn-dark">Cotizar</button>
+                </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/tequi3.jpg" class="d-block w-100" alt="..." width="10">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="tituloCarrusel">Tequisquiapan</h1>
+                <!-- <p>El destino para olvidarse de la rutina. Este pueblo mágico se encuentra en Querétaro. 
+                    Es muy conocido por ser un poblado pequeño y por encontrarse en una zona de aguas termales.</p> -->
+                    <a  href="https://www.visitmexico.com/queretaro/tequisquiapan" > 
+                    <button type="button" class="btn btn-dark">Artículo completo</button>
+                </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/pm2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                
+                <h1 class="tituloCarrusel">Pueblos mágicos</h1>
+                <!-- <p>Los Pueblos Mágicos se definen como lugares con grandes simbolismos y leyendas, 
+                    son poblados cuya importancia histórica ha sido fundamental para el desarrollo de la 
+                    historia y que enaltecen la identidad nacional en cada uno de sus rincones.</p> -->
+                    <a  href="https://www.visitmexico.com/tipos-de-turismo/pueblos-magicos" > 
+                        <button type="button" class="btn btn-dark">Artículo completo</button>
+                    </a>
+            </div>
+          </div>
         </div>
-        <section id = "contenido">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <br><br><br>
+
+    <h1 class="titulo">Experiencias turísticas</h1>
+    <br><br>
+    
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/atuaire.jpg" class="rounded" alt="A tu aire" width="150px">
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <img src="img/amigos.jpg" class="rounded" alt="Amigos" width="150px">
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <img src="img/familia.jpg" class="rounded" alt="Familia" width="150px">
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <img src="img/pareja.jpg" class="rounded" alt="Pareja" width="150px">
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <img src="img/escolar.jpg" class="rounded" alt="Escolares" width="150px">
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <img src="img/negocios.jpg" class="rounded" alt="Negocios" width="150px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5 style="text-align: center;">A tu aire</h5>
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <h5 style="text-align: center;">Amigos</h5>
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <h5 style="text-align: center;">Familia</h5>
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <h5 style="text-align: center;">Pareja</h5>
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <h5 style="text-align: center;">Escolares</h5>
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <h5 style="text-align: center;">Negocios</h5>
+                </td>
+            </tr>
+        </table>
+    </center>
+       
+
+
+    <br><br><hr><br><br>
+    <h1 class="titulo">Nuestros destinos turísticos más visitados</h1>
+    <br><br>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/cdmx.jpg" class="rounded" alt="cdmx" width="150px">
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <img src="img/cancun.jpg" class="rounded" alt="cancun" width="150px">
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <img src="img/gdl.jpg" class="rounded" alt="gdl" width="150px">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h5 style="text-align: center;">CDMX</h5>
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <h5 style="text-align: center;">Cancún</h5>
+                </td>
+                <td width="30px"></td>
+                <td>
+                    <h5 style="text-align: center;">Guadalajara</h5>
+                </td>
+                <td width="30px"></td>
+            </tr>
+        </table>
+    </center>
+
+
+    <br><br><hr><br><br>
+    <h1 class="titulo">¡Viaja a cualquier estado de la república mexicana!</h1>
+    <br><br>
+    <div style="text-align: center;">
+        <!-- <button type="button" class="btn btn-danger btn-lg">Cotizar</button> -->
+        <a href="cotizacion.html">
+            <button class="boton_personalizado parpadea">¡Cotiza ya!</button>
+        </a>
+    </div>
+
+
+    
+    <!--JSON artículos -->
+
+    <section class="global">
+        <section class="contenido">
             <div id = "posts">
                 <!--Articulos dinamicos de JSON-->
             </div>
-            <aside id = "sidebar">
-
-                <div id  = "about">
-                    <h4> ¿Quien Soy?</h4>
-                    <img src="img/Mike.jpg" alt="foto de rockstar">
-                    <p>
-                        Miguel Gómez currently works at the Division of postgraduate studies and research, Tecnológico Nacional de México/Instituto Tecnológico de León. Miguel does research in Computer Science, Biomedical Engineering, Pattern Recognition and Machine Learning.
-                    </p>
-
-                </div>
-                <div id="login">
-                    <h4><span>Inicio de sesión </span></h4>
-                    <form>
-                      <label for="name">Nombre</label>
-                      <input type="text" name="name" id="form_name" />
-                      <!-- <label for="email">Correo</label>
-                                <input type="email" name="email" id=""> -->
-                      <label for="password">contraseña</label>
-                      <input type="password" name="password" id="" />
-                      <a href="perfil.html"> <input type="submit" value="Enviar" /></a>
-                    </form>
-                  </div>
-                <!--Footer-->
-            </aside>
-            <div class="clearfix"></div>
         </section>
     </section>
-    <footer>Miguel S. Gómez Díaz &copy; &nbsp;&nbsp;
-        <a href="https://www.instagram.com/"><img src="img/ig.png" width="20" height="20"></a>
-        <a href="https://www.facebook.com/"><img src="img/fb.png" width="20" height="20"></a>
-        <a href="https://www.twitch.tv/"><img src="img/tw.png" width="20" height="20"></a>
+
+    
+
+    <br><br>
+
+    <footer>
+        <center>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        2021 &copy; Rainbow Travel Agency
+                    </td>
+                    <td width="600px">
+
+                    </td>
+                    <td>
+                        <div class="rrss">
+                            <a href="https://www.facebook.com/">
+                                <i class="bi bi-facebook" style="font-size: 1.5rem; color: white;"></i>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rrss">
+                            <a href="https://www.instagram.com/">
+                                <i class="bi bi-instagram" style="font-size: 1.5rem; color: white;"></i>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rrss">
+                            <a href="https://twitter.com/">
+                                <i class="bi bi-twitter" style="font-size: 1.5rem; color: white;"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    </center>
     </footer>
+
+
 </body>
 
 </html>
